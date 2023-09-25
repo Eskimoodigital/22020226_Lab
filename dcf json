@@ -1,0 +1,58 @@
+{
+    "dest_ip": "18.165.83.29",
+    "event_type": "alert",
+    "src_port": 36803,
+    "src_ip": "10.1.2.10",
+    "alert": {
+        "gid": 1,
+        "action": "allowed",
+        "signature_id": 2013028,
+        "category": "Attempted Information Leak",
+        "severity": 2,
+        "metadata": {
+            "created_at": [
+                "2011_06_14"
+            ],
+            "updated_at": [
+                "2022_05_03"
+            ]
+        },
+        "rev": 7,
+        "signature": "ET POLICY curl User-Agent Outbound"
+    },
+    "timestamp": "2023-08-04T22:20:51.968806+0000",
+    "flow_id": 393401719834650,
+    "app_proto": "http",
+    "dest_port": 80,
+    "http": {
+        "status": 200,
+        "http_content_type": "text/html",
+        "url": "http://testmynids.org/uid/index.html",
+        "http_method": "GET",
+        "http_user_agent": "curl/7.81.0",
+        "length": 0,
+        "protocol": "HTTP/1.1",
+        "hostname": "testmynids.org"
+    },
+    "proto": "TCP",
+    "flow": {
+        "bytes_toserver": 273,
+        "bytes_toclient": 614,
+        "pkts_toserver": 4,
+        "start": "2023-08-04T22:20:51.968730+0000",
+        "pkts_toclient": 3
+    },
+    "in_iface": "ids1",
+    "tx_id": 0,
+    "id": "JIajwokBuquLlflvpmti",
+    "gateway": "GWGW-accounting-aws-spoke-dev",
+    "src_group": [
+        "avtx_system_v4_wildcard_app_domain",
+        "dev",
+        "rfc1918"
+    ],
+    "dest_group": [
+        "avtx_system_v4_wildcard_app_domain",
+        "avtx_system_internet_routes_app_domain"
+    ]
+}
