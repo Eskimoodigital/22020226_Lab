@@ -154,7 +154,7 @@ variable "az_spoke2_region" {
 }
 
 variable "az_spoke2_name" {
-  default = "az-r2-spoke1"
+  default = "az-r3-spoke1"
 }
 
 variable "az_spoke2_cidr" {
