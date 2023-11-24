@@ -20,6 +20,7 @@ module "spoke_aws_1" {
   instance_size   = var.aws_spoke_instance_size
   ha_gw           = var.ha_enabled
   insane_mode     = true
+  enable_max_performance = true
   transit_gw      = "avx-eu-central-1-transit"
 }
 
@@ -59,6 +60,7 @@ module "spoke_az_1" {
   instance_size   = var.az_spoke_instance_size
   ha_gw           = var.ha_enabled
   insane_mode     = true
+  enable_max_performance = true
   transit_gw      = "avx-west-europe-transit"
 }
 

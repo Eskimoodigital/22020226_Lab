@@ -1,5 +1,5 @@
 transit1:
-  transit_ha_gw: false
+  transit_ha_gw: true
   transit_asn: 65301
   transit_cidr: 10.1.0.0/23
   transit_cloud: aws
@@ -7,10 +7,11 @@ transit1:
   transit_insane_mode: true
 
 transit2:
-  transit_ha_gw: false
+  transit_ha_gw: true
   transit_asn: 65302
   transit_cidr: 10.1.2.0/23
   transit_cloud: azure
   transit_region_name: West Europe
   transit_insane_mode: true
+  transit_instance_size: Standard_D4s_v5
 
