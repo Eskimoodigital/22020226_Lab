@@ -91,7 +91,7 @@ variable "ha_enabled" {
 
 
 variable "aws_spoke_instance_size" {
-  default = "c5n.xlarge"
+  default = "t3.micro"
 }
 
 variable "aws_spoke1_region" {
@@ -134,7 +134,7 @@ variable "aws_spoke2_cidr" {
 
 
 variable "az_spoke_instance_size" {
-  default = "Standard_D4s_v5"
+  default = "Standard_B1ms"
 }
 
 variable "az_spoke1_region" {
@@ -154,7 +154,7 @@ variable "az_spoke2_region" {
 }
 
 variable "az_spoke2_name" {
-  default = "az-r2-spoke1"
+  default = "az-r2-spoke2"
 }
 
 variable "az_spoke2_cidr" {
